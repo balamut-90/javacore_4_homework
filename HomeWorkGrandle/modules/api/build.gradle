@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'org.grandle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":modules:db")
+    implementation project(":modules:service")
+}

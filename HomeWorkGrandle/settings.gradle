@@ -1,0 +1,8 @@
+rootProject.name = 'HomeWorkGrandle'
+include 'modules:api'
+findProject(':modules:api')?.name = 'api'
+include 'modules:db'
+findProject(':modules:db')?.name = 'db'
+include 'modules:service'
+findProject(':modules:service')?.name = 'service'
+
